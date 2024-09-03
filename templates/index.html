@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI GPT-4 C0d3x by trhacknon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Animated Banner -->
+    <div class="banner">
+        <h1>trhacknon</h1>
+        <p>OpenAI GPT-4 C0d3x by trhacknon</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Options</h2>
+            <label for="task">Task:</label>
+            <select id="task">
+                <option value="generate">Generate Code</option>
+                <option value="convert">Convert Code</option>
+            </select>
+
+            <label for="target-lang">Target Language:</label>
+            <input type="text" id="target-lang" placeholder="e.g., Python, Bash, Golang">
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <textarea id="input-text" placeholder="Enter your prompt or code here..."></textarea>
+            <button id="action-button">Run</button>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+run = "python appp.py"
+modules = ["python-3.8"]
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
+localPort = 8501
+externalPort = 80
