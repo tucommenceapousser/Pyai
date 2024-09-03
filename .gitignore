@@ -1,0 +1,8 @@
+replit.nix
+.replit
+app.py
+main.py
+.upm/
+.pythonlibs/
+pyproject.toml
+poetry.lock

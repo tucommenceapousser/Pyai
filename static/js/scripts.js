@@ -34,4 +34,3 @@ document.getElementById('action-button').addEventListener('click', async () => {
         document.getElementById('output').textContent = `Request failed: ${error}`;
     }
 });
-Der
