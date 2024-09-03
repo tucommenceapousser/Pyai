@@ -6,7 +6,7 @@ def main():
     st.title("Code Assistant with Mistral AI")
 
     # Set API key
-    os.environ["MISTRAL_API_KEY"] = "CwrLyHiZC3KkU3G5FSNk1oBxAOMVBDju"
+    os.environ["MISTRAL_API_KEY"] = ""
     api_key = os.environ["MISTRAL_API_KEY"]
 
     # Navigation
