@@ -140,12 +140,12 @@ pre {
 /* Footer styling */
 /* Footer styling */
 .footer {
-    background: linear-gradient(135deg, #001f0f 0%, #452d76 40%, #ff3737 60%, #ffe600 80%, #00ff77 100%);
-    padding: 40px 0;
-    color: #FFFFFF;
+    background-color: #000; /* Fond noir */
+    color: #FFFFFF; /* Texte en blanc */
+    padding: 20px 0;
     text-align: center;
     position: relative;
-    margin-top: 50px;
+    overflow: hidden;
 }
 
 .footer-content {
@@ -156,23 +156,27 @@ pre {
 
 .footer h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 10px;
+    color: #ff00ff; /* Couleur flashy */
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; /* Ombre fluos */
+    animation: glow 1.5s infinite alternate;
 }
 
 .footer p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
-    text-shadow: 1px 1px 5px #000;
+    color: #00ffff; /* Couleur flashy */
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; /* Ombre fluos */
+    animation: glow 1.5s infinite alternate;
 }
 
 .footer .social-icons {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .footer .social-icons li {
@@ -181,26 +185,34 @@ pre {
 
 .footer .social-icons a {
     color: #FFFFFF;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+    font-size: 1.5rem; /* Taille des icônes */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-decoration: none; /* Enlever le soulignement des liens */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff; /* Ombre fluos */
+    animation: glow 1.5s infinite alternate;
 }
 
 .footer .social-icons a:hover {
-    color: #ff6b6b;
+    color: #00ffff; /* Couleur au survol */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; /* Ombre fluos au survol */
 }
 
 .footer-text {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 20px;
-    text-shadow: 1px 1px 5px #000;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; /* Ombre fluos */
 }
 
-.footer::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to right, transparent, #121212, transparent);
+/* Animation de scintillement des ombres */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+    }
 }
